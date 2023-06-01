@@ -1,0 +1,42 @@
+.list {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.item {
+  min-width: 400px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  gap: 20px;
+  color: aliceblue;
+  font-size: 18px;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 130, 238, 1) 0%,
+    rgba(0, 128, 255, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+.button {
+  width: 100px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(238, 130, 238, 1);
+  border-radius: 10px;
+  color: aliceblue;
+  font-size: 18px;
+  box-shadow: 2px 2px 2px rgb(13, 153, 234);
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.5s;
+}
+
+.button:hover {
+  background-color: rgba(238, 130, 238, 1);
+  box-shadow: 2px 2px 5px rgb(13, 153, 234);
+}

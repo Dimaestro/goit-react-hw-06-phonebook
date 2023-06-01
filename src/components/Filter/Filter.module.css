@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  text-align: center;
+}
+
+.input {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}

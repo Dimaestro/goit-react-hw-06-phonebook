@@ -1,0 +1,23 @@
+.container {
+  max-width: 800px;
+  min-height: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border: 1px solid rgba(238, 130, 238, 1);
+  border-radius: 15px;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 128, 255, 1) 0%,
+    rgba(238, 130, 238, 1) 100%
+  );
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: aliceblue;
+}
