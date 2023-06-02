@@ -1,7 +1,15 @@
 import styles from './Filter.module.css';
-import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { setFilterName } from 'redux/filterSlice/filterSlice';
 
-const Filter = ({filter, onChange}) => {
+const Filter = () => {
+  const dispatch = useDispatch();
+
+  const hanleChange = (event) => {
+    const name = event.target.value;
+    dispatch(setFilterName(name));
+  }
+
   return (
     <div className={styles.container}>
       <label className={styles.label}>
@@ -10,17 +18,11 @@ const Filter = ({filter, onChange}) => {
           className={styles.input}
           type="text"
           name='filter'
-          value={filter}
-          onChange={onChange}
+          onChange={hanleChange}
         />
       </label>
     </div>
   )
-}
-
-Filter.propTypes = {
-  filter: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired
 }
 
 export default Filter;
